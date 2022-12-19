@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import AddSong from '../profile/addSong';
 import { useDispatch, useSelector } from "react-redux";
 
 import Card from 'react-bootstrap/Card';
@@ -28,6 +28,7 @@ const TrackPage = (props) => {
 	if(!props || !props.infoData || !trackData) return <p>Loading track, please wait... </p>;
 	return (
 		<div>
+			<AddSong />
 			<Card style={{
 				width: '52rem',
 				align: 'center',
